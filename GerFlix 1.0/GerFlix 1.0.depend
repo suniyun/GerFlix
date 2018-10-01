@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1538400172 source:c:\users\alumno\desktop\desktop\gerflix 1.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Usuario.h"
+
+1538402728 c:\users\alumno\desktop\desktop\gerflix 1.0\usuario.h
+	"Serie.h"
+
+1538396648 c:\users\alumno\desktop\desktop\gerflix 1.0\serie.h
+
+1538397465 source:c:\users\alumno\desktop\desktop\gerflix 1.0\serie.c
+	"Serie.h"
+	<string.h>
+
+1538400186 source:c:\users\alumno\desktop\desktop\gerflix 1.0\usuario.c
+	"Usuario.h"
+

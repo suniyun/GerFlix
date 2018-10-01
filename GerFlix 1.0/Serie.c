@@ -41,6 +41,32 @@ void inicializarSeriesHardCode(eSerie series[])
     }
 }
 
+int retornaIndiceSerie(eSerie listado[], int cantidad, eSerie unaSerie)
+{
+    int i;
+    for(i = 0; i < cantidad; i++)
+    {
+        if(listado[i].idSerie = unaSerie.idSerie)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int retornaIndiceSerieInt(eSerie listado[], int cantidad, int idDeSerieParametro)
+{
+    int i;
+    for (i = 0; i < cantidad; i++)
+    {
+        if(listado[i].idSerie = idDeSerieParametro)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
 
 
 

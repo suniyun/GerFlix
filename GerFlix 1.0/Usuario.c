@@ -1,11 +1,11 @@
 
 #include "Usuario.h"
 
-void inicializarUsuariosEstado(eUsuario usuarios[], int cant)
+void inicializarUsuariosEstado(eUsuario usuarios[], int cantidad)
 {
     int i;
 
-    for(i=0; i<cant; i++)
+    for(i=0; i<cantidad; i++)
     {
         usuarios[i].estado = 0;
     }
@@ -19,8 +19,6 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,101,100,100,101};
 
-
-
     int i;
 
     for(i=0; i<15; i++)
@@ -29,15 +27,39 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
         usuarios[i].idSerie=serie[i];
         usuarios[i].estado = 1;
         strcpy(usuarios[i].nombre, nombre[i]);
-
     }
 
+void mostrarUsuarios(eUsuario usuarios, int cantidad)
+{
+    int i;
+    for(i=0;i<cantidad;i++)
+    {
+         mostrarUnUsuario(listado[i]);
+    }
+}
 
+int retornaIndiceUsuario(eUsuario listado[], int cantidad, eUsuario unUsuario)
+{
+    int i
+    for (i = 0; i < cantidad; i++)
+    {
+        if(listado[i].idUsuario = unUsuario.idUsuario)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
 
+void mostrarUsuarioConSuSerie(eUsuario listado[], int cantidad, eSerie)
+{
+    int i;
+    int indiceSerie;
+    for(i=0; i<cantidad; i++)
+    {
+        mostrarUnUsuario(listado[i]);
+        indiceSerie = retornarIndiceSerieInt(listSerie, cantSerie, listado[i], indice);
 
-
-
-
-
-
+        mostrarUnaSerie(listado[indiceSerie]);
+    }
 }
